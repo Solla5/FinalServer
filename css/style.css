@@ -1,0 +1,217 @@
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 17px;
+    background-color: #fff;
+    color: black;
+    font-family: Alexandria;
+    background: rgb(2,0,36);
+    background: linear-gradient(126deg, rgba(2,0,36,1) 1%, rgba(64,4,4,0.5956757703081232) 48%, rgba(244,93,112,1) 95%);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.wrapper{
+    min-height: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+}
+.main{
+    flex: 1 1 auto;
+    position: relative;
+    min-height: 100%;
+}
+.header{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 120%;
+}
+.logo_item a{
+    color: rgb(199, 162, 67);
+    transition: all .6s ease; 
+}
+.logo_item span{
+    color: rgb(133, 124, 102);
+    transition: all .6s ease;  
+}
+.logo_item a:hover{
+    color: rgb(133, 124, 102); 
+}
+.logo_item span:hover{
+    color: rgb(199, 162, 67); 
+}
+.menu_list{
+    display: flex;
+    align-items: center;
+
+}
+.menu_item{
+    position: relative;
+    margin: 0 50px;
+    color: black;
+    font-size: 19px;
+    font-family:Alexandria;
+    transition: all .6s ease;
+}
+
+.menu_item a{
+    color:  rgb(199, 162, 67);
+}
+.menu_item::before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(187, 159, 159);
+    opacity: 0;
+    transition: all .6s ease;
+    box-sizing: border-box;
+}
+.menu_item:hover:before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    opacity: .8;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+
+.h1_header{
+    color: #fff;
+    text-align: center;
+    margin: 90px auto;
+
+
+}
+.fullscreen__title{
+    position: absolute;
+    top: 40px;
+    left: 27%;
+    font-family: 'Gloock', serif;
+    letter-spacing: 15px;
+    font-size: 60px;
+    text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f, 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+    color: #ffb0076c;
+
+
+
+    transform: translate(0px, 0px);
+    opacity:0;
+    transition: 3.3s ease;
+    z-index: 11;
+}
+.fullscreen__title._active{
+    transform: translate(0px,200px);
+    opacity:1;
+}
+.fullscreen__title2{
+    font-family: 'Gloock', serif;
+    letter-spacing: 15px;
+    font-size: 60px;
+    text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f, 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+    color: #ffb0076c;
+    margin:500px auto 0px;
+    position: absolute;
+    top: 80px;
+    left: 34%;
+    max-width: 1250px;
+
+
+    transform: translate(0px, 0px);
+    opacity:0;
+    transition: 3.3s ease;
+    z-index: 10;
+}
+.fullscreen__title2._active{
+    transform: translate(0px,-250px);
+    opacity:1;
+}
+.box__img{
+    margin: -70px auto;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.img_one{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/sum_big.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.img_two{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/ranger_big.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.fullscreen__title3{
+    transform: translate(120%, 0px);
+    opacity:0;
+    transition: 1.9s ease;
+}
+.fullscreen__title3._active{
+    transform: translate(0px,0px);
+    opacity:1;
+}
+.fullscreen__title4{
+    transform: translate(-120%, 0px);
+    opacity:0;
+    transition: 1.9s ease;
+}
+.fullscreen__title4._active{
+    transform: translate(0px,0px);
+    opacity:1;
+}
+.button_daunt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    color: white;
+    z-index: 3;
+}
+.button__active{
+    color:  rgb(199, 162, 67);
+    background: radial-gradient(ellipse at center, #443501 0%,#000000 100%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    padding: 30px 30%;
+    z-index: 4;
+
+    font-family: 'Gloock', serif;
+    letter-spacing: 15px;
+    font-size: 30px;
+
+    border-radius: 1em;
+    transition: all .7s ease;
+}
+.button__active:hover{
+    color:  rgb(20, 15, 1);
+    background: radial-gradient(ellipse at center, #997802 0%,#000000 100%);
+
+}
